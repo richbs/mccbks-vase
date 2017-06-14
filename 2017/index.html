@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>🏺 McCBKS ⚽️</title>
+		    <link rel="stylesheet"
+          href="../node_modules/chartist/dist/chartist.min.css">
+
+	</head>
+	<body>
+		<div id="chartism" class="ct-perfect-fourth"></div>
+
+		<script src="../node_modules/chartist/dist/chartist.min.js"></script>
+		<script>
+			var data = {
+  // A labels array that can contain any sort of values
+  labels: [
+"GW0","GW1","GW2","GW3","GW4","GW5","GW6","GW7","GW8","GW9","GW10","GW11","GW12","GW13","GW14","GW15","GW16","GW17","GW18","GW19","GW20","GW21","GW22","GW23","GW24","GW25","GW26","GW27","GW28","GW29","GW30","GW31","GW32","GW33","GW34","GW35","GW36","GW37","GW38"  ],
+  // Our series array that contains series objects or in this case series data arrays
+  series: [
+    [0,22,54,99,146,190,220,279,317,370,452,487,529,582,619,657,683,710,777,820,877,937,991,1033,1072,1137,1172,1236,1249,1299,1330,1366,1398,1456,1518,1567,1629,1714,1780], // POGBA
+    [ 0,42,78,113,147,207,263,313,355,412,471,524,578,628,721,781,845,902,952,1009,1076,1141,1208,1250,1328,1373,1425,1467,1494,1558,1601,1631,1697,1732,1819,1873,1920,1985,2048], // Fumblers
+    [0,52,128,174,213,262,318,349,386,408,489,568,631,700,751,809,860,908,968,1020,1065,1132,1184,1220,1284,1329,1424,1474,1518,1572,1596,1622,1704,1753,1797,1881,1934,1991,2049], // Ross
+    [0,35,81,101,144,193,231,268,291,331,400,458,497,571,610,652,689,739,812,853,902,952,1016,1047,1101,1143,1209,1257,1273,1332,1362,1431,1479,1523,1564,1605,1666,1759,1819], // Conclusions
+    [0,31,67,94,153,217,257,319,351,396,454,517,556,599,631,683,721,761,817,866,927,973,1017,1052,1112,1155,1216,1256,1273,1325,1377,1434,1490,1543,1594,1629,1674,1772,1832], // MacMagicians
+    [0,46,118,154,232,282,337,392,440,490,564,624,664,706,754,794,838,889,948,992,1030,1085,1146,1191,1251,1289,1327,1380,1390,1414,1442,1494,1540,1584,1660,1697,1741,1810,1848] // Volleys
+   ]
+};
+
+// Create a new line chart object where as first parameter we pass in a selector
+// that is resolving to our chart container element. The Second parameter
+// is the actual data object.
+new Chartist.Line('#chartism', data,  { axisY: {onlyInteger: true}, showPoint: false});
+		</script>
+	</body>
+</html>

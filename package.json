@@ -1,0 +1,14 @@
+{
+  "name": "mccbks-vase",
+  "version": "1.0.0",
+  "description": "Charting the progress of competitors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chartist": "^0.11.0"
+  }
+}
