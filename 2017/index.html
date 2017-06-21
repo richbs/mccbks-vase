@@ -17,7 +17,9 @@
     <!-- <div id="chartism" class="ct-perfect-fourth"></div> -->
     <canvas style="margin: 0px 10px; width: 80%;" id="chartjs"></canvas>
     <script src="../node_modules/chart.js/dist/Chart.min.js"></script>
-    <script src="../node_modules/chartjs-plugin-zoom/chartjs-plugin-zoom.min.js"></script>
+    <script src="../node_modules/hammerjs/hammer.min.js"></script>
+    <script src="../node_modules/chartjs-plugin-zoom/chartjs-plugin-zoom.min.js"></script>    
+
 <!--     <script src="../node_modules/chartist/dist/chartist.min.js"></script>
     <script>
     var data = {
@@ -114,11 +116,11 @@
             rangeMin: {
                 // Format of min zoom range depends on scale type
                 x: 0,
-                y: 50
+                y: -100
             },
             rangeMax: {
                 // Format of max zoom range depends on scale type
-                x: 0,
+                x: 50,
                 y: 2200
             }            
         },
